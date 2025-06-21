@@ -46,7 +46,7 @@ export class ConcertService {
      * @returns {Promise<AxiosResponse<any>>} Promise that resolves to the created category
      */
     create(resource) {
-        return httpInstance.post(`${this.resourceEndpoint}`, resource);
+        return httpInstance.post(this.resourceEndpoint, resource);
     }
 
     /**
